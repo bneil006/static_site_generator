@@ -23,6 +23,7 @@ class HTMLNode:
             and self.children == other.children
             and self.props == other.props
         )
+    
     def __repr__(self):
         return f"HTMLNode({self.tag}, {self.value}, {self.children}, {self.props})"
 
@@ -78,4 +79,4 @@ def something():
     c = ParentNode("p", list_for_parent_node)
     print(c.to_html())
 
-something()
+# something()
